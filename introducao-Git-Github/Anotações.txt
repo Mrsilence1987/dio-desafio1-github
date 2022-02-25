@@ -1,2 +1,22 @@
 Link para download: https://git-scm.com/downloads
+
+
+
+
 O Git Bash é um terminal extendido para otimizar o uso do Git.
+
+
+
+Quando utilizamos o comando - git config - e colocamos um nome de autor e email ao enviar no push (para o github) aparecera o nome do criador dos arquivos uppados.
+
+
+
+
+ALGUNS COMANDOS NO GIT
+
+git config --global user.name MrSilence1987
+git push origin main
+git status
+git add *
+git commit -m "Atenção: O -m no commit serve para colocar observação no commit, recurso indispensável"
+
