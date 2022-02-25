@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thiago"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-18 06:17:37 "/>
+        <attribute name="created" value="VGhpYWdvO0RFU0tUT1AtMEpMNk9MODsyMDIyLTAyLTE4OyIwNTozNjo0NiAiOzI4NDY="/>
+        <attribute name="edited" value="VGhpYWdvO0RFU0tUT1AtMEpMNk9MODsyMDIyLTAyLTE4OyIwNjoxNzozNyAiOzI7Mjk1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;PARAB&#201;NS VOC&#202; PASSOU DE ANO!!!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;REPROVOU!!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
