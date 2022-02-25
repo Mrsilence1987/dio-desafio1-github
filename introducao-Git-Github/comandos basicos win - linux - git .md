@@ -1,11 +1,11 @@
-##Windows
+## Windows
 
  - cd
  - dir
  - mkdir (mkdir /introducao-Git-Github)
  - del / rmdir
 
-##Unix
+## Unix
 
  - cd
  - ls
@@ -13,7 +13,7 @@
  - rm -rf
 
 
-##Git
+## Git
 
  - git init
  - git add
