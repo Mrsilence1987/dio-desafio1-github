@@ -1,0 +1,67 @@
+# O que é JVM?
+
+"JVM (Java Virtual Mahine) é uma máquina virtual responsável pel tradução dos ByteCodes oriundos do compilador Javac (Java Compiler) em código de máquina de cada sistema operacional."
+
+======================
+Source File (.java)
+>>
+Compilador (Javac)
+>>
+Bytecodes (.class)
+>>
+JVM
+>>
+Windows, Linux, Mac
+======================
+
+ - JRE (Java Runtime Environment) - responsável por executar os programas em Java.
+ - JDK (Java Development Kit) - utilitários que pemrite o desenvolvimento de programas em Java. Já possui a JVM para executar os programas.
+
+### Tipos de plataformas
+
+ - Java SE (Java standard Edition) - Contem as especificações do Java e pode ser implementado por diversas empresas como Oracle, Azul Zulu, etc.
+
+ - Java EE (Java Enterprise Edition) - contém todas as especificações do Java SE e um número de programas úteis para que executam em servidores. Em 2019 foi renomeado para Jakarta EE.
+
+ - Java ME (Java Micro Edition) - contém especificações para desenvolvimento de programas para dispositivos pequenos com celulare, PDAs, etc.
+
+### Quais implementações Java SE?
+
+ - OpenJDK
+ - Oracle JDK
+ - AdoptOpenJDK
+ - Amazon Corretto
+ - GraalVM CE
+ - Azul Zulu
+
+## Instalando a JVM
+
+### Instalando o Curl
+sudo apt install curl
+
+### Instalando Java Version Manager
+https://github.com/shyiko/jabba
+curl -sL https://github.com/shyiko/jba/raw/master/install.sh | bash && . ~/.jabba/jabba.sh
+
+### Utilizando Java Version Manager
+
+jabba ls-remote (lista versões disponíveis)
+jabba install openjdk@1.11 (instala versão openjdk 1.11)
+jabba ls (lista as versões instaladas)
+jabba use openjdk@1.11 (seleciona qual versão usar)
+java -version (verifica qual versão esta em uso)
+
+### Criando classe principal (src/com/dio/MyFirstProgram.java)
+
+vim MyFirstProgram.java
+:wq(salva)
+
+package com.dio
+import com.dio.base.order
+public class MyFirstProgram {
+	public static void main(String[] args) {
+		final Order order = new Order("code1234");
+		System.out.println(order);
+	}
+
+
