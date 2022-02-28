@@ -22,4 +22,5 @@ git push origin main
 git status
 git add *
 git commit -m "Atenção: O -m no commit serve para colocar observação no commit, recurso indispensável"
+git clone https://github.com/cami-la/curso-dio-dominando-ides-java.git
 
